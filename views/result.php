@@ -3,7 +3,7 @@
     <head>
         <title>notnotPHP | Home</title>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        <link href="lib/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="public/lib/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="navbar">
@@ -37,7 +37,7 @@
                         </thead>
                         <tbody>
                             <?php
-                            foreach ($data as $key => $value) {
+                            foreach ($cours as $key => $value) {
                                 ?>
                                 <tr><td><?php echo strtoupper($value['nom']) ?></td><td><?php echo strtoupper($value['prenom']) ?></td>
                                     <?php

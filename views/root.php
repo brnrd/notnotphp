@@ -3,7 +3,7 @@
     <head>
         <title>notnotPHP | Home</title>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        <link href="lib/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="public/lib/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="navbar">
@@ -14,7 +14,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="/">notnotPHP</a>
+                    <a class="brand" href="/notnotPHP/notnotPHP">notnotPHP</a>
                     <div class="nav-collapse" id="main-menu">
                         <ul class="nav" id="main-menu-left">
                             <li>
@@ -28,7 +28,24 @@
         <div class="container">
             <div class="row">
                 <div class="span12">
-                    <form class="well form-horizontal" name="form" action="/result" method="post">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                        <th>Nom</th>
+                        <th>Prenom</th>
+                        <th>Id du cours</th>
+                        <th>Intitule</th>
+                        </thead>
+                        <tbody>
+                            <?php
+                            foreach ($cours as $item) {
+                                ?>
+                                <tr><td><?php echo strtoupper($item['nom']) ?></td><td><?php echo strtoupper($item['prenom']) ?></td>
+                                    <?php
+                                }
+                                ?>
+                        </tbody>
+                    </table>
+                    <form class="well form-horizontal" name="form" action="/notnotPHP/notnotPHP/result" method="post">
                         <fieldset>
                             <div class="control-group">
                                 <div class="input-append">

@@ -35,6 +35,16 @@ class NotNotDAO {
             echo 'ERROR: ' . $e->getMessage();
         }
     }
+    
+    public static function getCours() {
+        self::getConnection();
+        try {
+            $data = self::$connection->query('SELECT * FROM prof');
+            return $data->fetchAll();
+        } catch (PDOException $e) {
+            echo 'ERROR: ' . $e->getMessage();
+        }
+    }
 
 }
 
