@@ -4,6 +4,7 @@
         <title>notnotPHP | Home</title>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <link href="public/lib/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="public/lib/css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="navbar">
@@ -21,6 +22,16 @@
                                 <a href="https://bitbucket.org/brnrd/notnotPHP" tarket="_blank">Code</a>
                             </li>
                         </ul>
+                        <ul class="nav pull-right">
+                            <li>
+                                <form class="navbar-form pull-right">
+                                    <div class="input-append">
+                                        <input type="text" id="search_input" placeholder="Recherche" class="input-xxlarge"></input>
+                                        <button class="btn" id="clear_input">Effacer</button>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -28,35 +39,32 @@
         <div class="container">
             <div class="row">
                 <div class="span12">
-                    <table class="table table-bordered table-striped table-hover">
+                    <div id="page_title">
+                        <h1>Pour chercher, c'est par là ↑</h1>
+                        <h3>Et les résultats, ce sera ici</h3>
+                    </div>
+                    <table id="table" class="table table-bordered table-striped table-hover table-condensed">
                         <thead>
                         <th>Nom</th>
                         <th>Prenom</th>
-                        <th>Id du cours</th>
+                        <th>Année</th>
                         <th>Intitule</th>
                         </thead>
                         <tbody>
                             <?php
                             foreach ($cours as $item) {
                                 ?>
-                                <tr><td><?php echo strtoupper($item['nom']) ?></td><td><?php echo strtoupper($item['prenom']) ?></td>
+                                <tr><td><?php echo strtoupper($item['nom']) ?></td><td><?php echo strtoupper($item['prenom']) ?></td><td><?php echo strtoupper($item['annee']) ?></td><td><?php echo strtoupper($item['intitule']) ?></td>
                                     <?php
                                 }
                                 ?>
                         </tbody>
                     </table>
-                    <form class="well form-horizontal" name="form" action="/notnotPHP/notnotPHP/result" method="post">
-                        <fieldset>
-                            <div class="control-group">
-                                <div class="input-append">
-                                    <input class="input-xlarge" type="text" name="query" placeholder="Nom du prof">
-                                    <input class="btn" type="submit" value="Chercher">
-                                </div>
-                            </div>
-                        </fieldset>
-                    </form>
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="public/lib/js/jquery/jquery-2.0.0.min.js"></script>
+        <script type="text/javascript" src="public/lib/js/jquery/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="public/lib/js/script.js"></script>
     </body>
 </html>
