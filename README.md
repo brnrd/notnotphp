@@ -44,7 +44,7 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
-[licence]:https://bitbucket.org/brnrd/noipasaran/raw/b4bf2a8132fbdefb9c5e56787e75e45147323a80/LICENCE
+[licence]:https://raw.github.com/brnrd/notnotphp/master/LICENCE
 [jquery]:http://jquery.com/
 [alwaysdata]:https://www.alwaysdata.com/
 [appfog]:https://www.appfog.com/
