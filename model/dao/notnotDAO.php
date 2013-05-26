@@ -24,7 +24,6 @@ class NotNotDAO {
             echo 'ERROR: ' . $e->getMessage();
         }
     }
-
 }
 
 ?>

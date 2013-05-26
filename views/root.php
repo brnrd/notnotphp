@@ -52,7 +52,7 @@
                         </thead>
                         <tbody>
                             <?php
-                            foreach ($cours as $item) {
+                            foreach ($data as $item) {
                                 ?>
                                 <tr><td><?php echo strtoupper($item['nom']) ?></td><td><?php echo strtoupper($item['prenom']) ?></td><td><?php echo strtoupper($item['annee']) ?></td><td><?php echo strtoupper($item['intitule']) ?></td>
                                     <?php
