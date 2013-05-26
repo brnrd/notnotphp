@@ -12,17 +12,22 @@ $(document).ready(function() {
     $("#table_filter").remove();
 });
 
-$("#search_input").keyup(function() {
-    console.log($(this).val());
-    var hasValue = this.value.length > 0;
+var toggleTable = function(hasValue) {
     $("#table")[hasValue ? 'show' : 'hide']();
-    $("#table").dataTable().fnFilter($(this).val());
     $("#page_title")[hasValue ? 'hide' : 'show']();
+};
+
+$("#search_input").keyup(function() {
+    var hasValue = this.value.length > 0;
+    var star = $(this).val() === "*";
+    if (!star) {
+        $("#table").dataTable().fnFilter($(this).val());
+    }
+    toggleTable(hasValue);
 });
 
 $("#clear_input").on('click', function() {
     $("#search_input").val("");
     $("#table").dataTable().fnFilter($("#search_input").val());
-    $("#table").hide();
-    $("#page_title").show();
+    toggleTable(false);
 });

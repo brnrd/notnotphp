@@ -19,14 +19,14 @@
                     <div class="nav-collapse" id="main-menu">
                         <ul class="nav" id="main-menu-left">
                             <li>
-                                <a href="https://bitbucket.org/brnrd/notnotPHP" tarket="_blank">Code</a>
+                                <a href="https://bitbucket.org/brnrd/notnotphp" tarket="_blank">Code</a>
                             </li>
                         </ul>
                         <ul class="nav pull-right">
                             <li>
                                 <form class="navbar-form pull-right">
                                     <div class="input-append">
-                                        <input type="text" id="search_input" placeholder="Recherche" class="input-xxlarge"></input>
+                                        <input type="text" id="search_input" placeholder="Recherche par ex. &quot;Lacroix 2013&quot; ou &quot;LAPR 2012&quot;" class="input-xxlarge"></input>
                                         <button class="btn" id="clear_input">Effacer</button>
                                     </div>
                                 </form>
@@ -41,7 +41,7 @@
                 <div class="span12">
                     <div id="page_title">
                         <h1>Pour chercher, c'est par là ↑</h1>
-                        <h3>Et les résultats, ce sera ici</h3>
+                        <h3>Et les résultats seront ici</h3>
                     </div>
                     <table id="table" class="table table-bordered table-striped table-hover table-condensed">
                         <thead>
