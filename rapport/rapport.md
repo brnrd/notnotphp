@@ -24,10 +24,14 @@ La vue est structurée en deux parties :
 + La barre de navigation contenant le champ de recherche.
 + Le corps de la page contenant le tableau de représentation des données.
 
+![Page de base](./start_main.png)
+
 La mise en forme est faite à l'aide de Bootstrap.
 La gestion des évènements de la page à l'aide de la librairie JavaScript jQuery et jQuery dataTables.
 
 De base, la vue n'affiche pas le tableau de données. Celui-ci peut-être affiché malgré tout en tapant "*" dans la barre de recherche.
+
+![Page avec recherche](./search_main.png)
 
 Lorsque l'utilisateur commence à taper dans la barre de recherche, les informations disparaissent au profit du tableau de données. Dans celui-ci, les données sont filtrées en temps réel, à chaque ajout ou retrait de lettre dans la barre de recherche.
 
@@ -59,6 +63,8 @@ Permet de se loguer.
 Permet d'uploader le code sur les serveurs d'AppFog.
 
 Il ne reste plus qu'à accéder à l'application via [http://notnotphp.eu01.aws.af.cm/](http://notnotphp.eu01.aws.af.cm/)
+
+La base de donnée elle est hébergée par [AlwaysData](https://www.alwaysdata.com/)
 
 ## Rapport
 
