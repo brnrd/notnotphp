@@ -10,7 +10,6 @@ session_start();
 function root() {
     global $ROOT_PATH;
     $cours = NotNotDAO::getAll();
-    error_log(print_r($cours, true));
     require("$ROOT_PATH/views/root.php");
 }
 
